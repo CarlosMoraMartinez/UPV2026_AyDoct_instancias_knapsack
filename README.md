@@ -4,7 +4,7 @@
 ### Departamento de Biotecnología
 ### Universitat Politècnica de València UPV2026
 
-Este repositorio contiene tests para el problema de la mochila (knapsack problem 0-1) seleccionados del repositorio de [KPlib](https://github.com/likr/kplib/tree/master), de Yosuke Onoue (Nihon University). 
+Este repositorio contiene tests para el problema de la mochila (0-1 knapsack problem) seleccionados del repositorio de [KPlib](https://github.com/likr/kplib/tree/master), de Yosuke Onoue (Nihon University). 
 
 Cada fichero contiene una instancia del problema en el siguiente formato:
 
