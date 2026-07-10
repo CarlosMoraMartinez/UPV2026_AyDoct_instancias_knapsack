@@ -93,10 +93,16 @@ class Knapsack:
               self.solution.append(i)
               j-= self.weights[i-1]
               i-= 1
-        self.solution.reverse()
-        self.is_solved = True      
+
+        # Poner los objetos en orden y calcular el peso y el valor totales de la solucion
+        self.solution.reverse()     
         self.solution_weight = sum([self.weights[i-1] for i in self.solution])
         self.solution_value = sum([self.values[i-1] for i in self.solution])
+
+        assert self.solution_value == self.DP[self.n, self.k] # Comprobar que el valor es igual al de la matriz
+        assert self.solution_weight <= self.k # Comprobar que el peso no sobrepasa el peso maximo
+        self.is_solved = True 
+
     def print_solution(self):
           
         strout = (f"{self.name}, n={self.n}, k={self.k}\n"
